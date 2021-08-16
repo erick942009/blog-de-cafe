@@ -1,7 +1,7 @@
 :root
 {
-    --fuenteHedaing: 'Pt sans', sans-serif;
-    --fuenteparrafos: 'Open sans' sans-serif;
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
 
     --primario: #784d3c;
     --blanco: #ffffff;
@@ -16,14 +16,14 @@ html
 
 }
 
-*, *::before, *::after
+*, *:before, *:after
 {
     box-sizing: inherit;
 }
 
 body
 {
-    font-family: var(--fuenteparrafos);
+    font-family: var(--fuenteParrafos);
     font-size: 1.6rem;
     line-height: 2;
 }
@@ -44,7 +44,7 @@ a
 
 h1, h2, h3, h4
 {
-    font-family: var(--fuenteHedaing);
+    font-family: var(--fuenteHeading);
 }
 
 h1
@@ -105,3 +105,51 @@ img
      color: var(--blanco);
      margin-top: 5rem;
  }
+
+.logo
+{
+    color: var(--blanco);
+}
+
+.logo__nombre
+{
+    font-weight: 400;
+}
+
+.logo__bold
+{
+    font-weight: 700;
+}
+
+.navegacion__enlace
+{
+    display: block;
+    text-align: center;
+    color: var(--blanco);
+    font-size: 1.8rem;
+}
+
+@media (min-width: 768px)
+{
+    .header__texto
+    {
+        margin-top: 15rem;
+    }
+    .barra
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navegacion
+    {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .navegacion__enlace
+    {
+       
+    }
+}
