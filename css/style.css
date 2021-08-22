@@ -260,6 +260,7 @@ li
 .campo__field
 {
     flex: 1;
+    width: 100%;
 }
 
 .campo__field--textarea
