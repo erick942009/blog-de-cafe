@@ -246,8 +246,12 @@ li
 
 .campo
 {
-    display: flex;
-    margin-bottom: 2rem;
+    display: block;
+}
+
+.campo:last-of-type
+{
+    margin-top: 2rem;
 }
 
 .campo__label
@@ -255,6 +259,7 @@ li
     flex: 0 0 9rem;
     text-align: right;
     padding-right: 2rem;
+    font-weight: 700;
 }
 
 .campo__field
@@ -267,6 +272,11 @@ li
 {
     border: 1px solid var(--gris);
     height: 20rem;
+}
+
+.boton-grande
+{
+    width: 100%;
 }
 
 @media (min-width: 768px)
@@ -318,5 +328,17 @@ li
        grid-template-columns: 1fr 2fr;
        column-gap: 2rem;
    }
+   .campo
+    {
+        display: flex;
+        margin-bottom: 2rem;
+    }
+
+   .centrar-boton
+   {
+       width: max-content;
+       margin-left: auto;
+   }
+
 }
 
